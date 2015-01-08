@@ -1,2 +1,2 @@
 # link-stats
-Evaluates links of HTML pages based on PhantomJS
+Evaluates links of HTML pages based on PhantomJS.

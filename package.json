@@ -1,0 +1,13 @@
+{
+  "name": "link-stats",
+  "description": "Provides link stats of the passed HTML page. Needs PhantomJS installed to run.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/KaiHofstetter/link-stats",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^0.8.1",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-template-jasmine-istanbul": "^0.3.0"
+  },
+  "dependencies": {}
+}

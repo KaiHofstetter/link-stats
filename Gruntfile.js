@@ -51,6 +51,7 @@ module.exports = function (grunt) {
             coveralls: {
                 options: {
                     src: 'bin/lcov/lcov.info',
+                    
                     force: false
                 }
             }

@@ -15,7 +15,7 @@
     "grunt-template-jasmine-istanbul": "^0.3.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test && grunt coveralls"
   },
   "dependencies": {}
 }

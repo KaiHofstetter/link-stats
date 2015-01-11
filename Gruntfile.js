@@ -49,10 +49,8 @@ module.exports = function (grunt) {
             },
 
             coveralls: {
-                options: {
-                    src: 'bin/lcov/lcov.info',
-                    
-                    force: false
+                grunt_coveralls_coverage: {
+                    src: 'bin/lcov/lcov.info'
                 }
             }
         }
@@ -62,6 +60,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-coveralls');
 
-    grunt.registerTask('test', ['jshint', 'jasmine:coverage', 'coveralls']);
+    grunt.registerTask('test', ['jshint', 'jasmine:coverage']);
     grunt.registerTask('default', ['test']);
 };

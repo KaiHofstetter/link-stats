@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "upload-to-coveralls": "cat ./bin/loc/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "upload-to-coveralls": "cat ./bin/lcov/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {}
 }

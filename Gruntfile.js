@@ -46,19 +46,12 @@ module.exports = function (grunt) {
                         }
                     }
                 }
-            },
-
-            coveralls: {
-                grunt_coveralls_coverage: {
-                    src: 'bin/lcov/lcov.info'
-                }
             }
         }
     );
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
-    grunt.loadNpmTasks('grunt-coveralls');
 
     grunt.registerTask('test', ['jshint', 'jasmine:coverage']);
     grunt.registerTask('default', ['test']);

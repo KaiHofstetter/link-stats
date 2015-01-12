@@ -11,10 +11,10 @@ describe("PageEvaluator", function () {
 
             document.querySelectorAll = jasmine.createSpy("querySelectorAll spy").and.returnValue([anchor, selfAnchor]);
 
-            var selfReferences = PageEvaluator.getSelfReferences();
+            var selfReferences = PageEvaluator.evaluatePage();
 
-            expect(selfReferences).toContain('http://www.blablub');
-            expect(selfReferences.length).toBe(1);
+            expect(selfReferences.selfReferences).toContain('http://www.blablub');
+            expect(selfReferences.selfReferences.length).toBe(1);
         });
     });
 });

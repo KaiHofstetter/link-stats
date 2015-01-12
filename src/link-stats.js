@@ -10,13 +10,9 @@ page.open(url, function (status) {
 
     if (status === "success") {
         page.injectJs('urlutils.js');
-        var refs = page.evaluate(PageEvaluator.getSelfReferences);
+        var refs = page.evaluate(PageEvaluator.evaluatePage);
 
-        for (var n = 0; n < refs.length; ++n) {
-            if (refs[n]) {
-                console.log("Found Link: " + refs[n]);
-            }
-        }
+        console.log(JSON.stringify(refs, null, 4));
     }
     page.close();
     phantom.exit(0);

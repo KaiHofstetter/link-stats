@@ -13,8 +13,8 @@ describe("PageEvaluator", function () {
 
             var selfReferences = PageEvaluator.evaluatePage();
 
-            expect(selfReferences.selfReferences).toContain('http://www.blablub');
-            expect(selfReferences.selfReferences.length).toBe(1);
+            expect(selfReferences.links).toContain('http://www.blablub');
+            expect(selfReferences.links.length).toBe(1);
         });
     });
 });

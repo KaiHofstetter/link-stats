@@ -10,7 +10,9 @@ var PageEvaluator = {
 
             for (var n = 0; n < hrefElements.length; ++n) {
                 if (!UrlUtils.isSelfReference(hrefElements[n].getAttribute("href"))) {
-                    links.push(hrefElements[n].getAttribute("href"));
+                    if(links.indexOf(hrefElements[n].getAttribute("href"))===-1){
+                        links.push(hrefElements[n].getAttribute("href"));
+                    }
                 }
             }
 
